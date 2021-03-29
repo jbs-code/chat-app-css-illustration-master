@@ -1,0 +1,255 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Rubik', sans-serif;
+}
+
+.container{
+    max-width: 1440px;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.fondo-container{
+    position: absolute;
+    top: 0;
+    left: -100px;
+    width: 450px;
+    height: 85vh;
+    background: linear-gradient(45deg, rgba(136,56,255,1) 0%, rgba(233,66,255,1) 100%); 
+    border-radius: 0px 0px 50% 50%;
+}
+.fondo-container2{
+    position: absolute;
+    bottom: 0;
+    right: -100px;
+    transform: rotate(180deg);
+    width: 450px;
+    height: 85vh;
+    background: linear-gradient(45deg, rgba(136,56,255,1) 0%, rgba(233,66,255,1) 100%); 
+    border-radius: 0px 0px 50% 50%;
+    opacity: 7%;
+}
+
+
+
+.card{
+    width: 300px;
+    height: 600px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 40px rgba($color: #000000, $alpha: 0.3);
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    padding: 20px;
+
+
+    .container-card{
+        width: 100%;
+        height: 100%;
+        background-color: rgb(235, 232, 232);
+        border-radius: 20px;
+        position: relative;
+        .header-custom{
+            width: 70%;
+            height: 40px;
+            border-radius: 20px;
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #fff;
+        }
+
+        .header-card{
+            display: flex;
+            height: 15%;
+            background: linear-gradient(275deg, rgba(233,66,255,1) 0%, rgba(136,56,255,1) 100%);
+            border-radius: 20px 20px 5px 5px;
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+
+            .fas{
+                color: #fff;
+                margin-bottom: 20px;
+                text-shadow: 2px 2px rgba($color: #000000, $alpha: 0.5);
+            }
+            
+            .user{
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+
+                .avatar-img{
+                    width: 30px;
+                    height: 30px;
+                    border: 2px solid #fff;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    box-shadow: 0px 0px 2px 2px rgba($color: #000000, $alpha: 0.3);
+                    margin-right: 10px;
+                    
+                    img{
+                        width: 100%;
+                    }
+                }
+                .user-data{
+                    color: #fff;
+                    text-shadow: 2px 2px rgba($color: #000000, $alpha: 0.5);
+                    h3{
+                        font-size: 1rem;
+                    }
+                    p{
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+
+        .chat1{
+            margin: 10px 10px;
+            padding: 10px;
+            width: 60%;
+            background-color: rgb(211, 209, 209);
+            border-radius: 10px 10px 10px 3px;
+
+            p{
+                font-size: 0.5rem;
+                color: hsl(276, 55%, 52%);
+            }
+        }
+
+        .puppy-img{
+            display: flex;
+            justify-content: space-around;
+            width: 60%;
+            margin-left: auto;
+            margin-right: 10px;
+            img{
+                width: 40px;
+                height: 40px;
+                border-radius: 10px;
+            }
+        }
+        .chat2{
+            margin-right: 10px;
+            margin-left: auto;
+            margin-top: 10px;
+            padding: 10px;
+            width: 60%;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px 10px 3px 10px;
+
+            p{
+                font-size: 0.5rem;
+                color: hsl(271, 15%, 43%)
+            }
+        }
+
+        .chat3{
+            margin: 10px 10px;
+            padding: 10px;
+            width: 60%;
+            background: linear-gradient(275deg, rgba(136,56,255,1) 0%, rgba(233,66,255,1) 100%);
+            border-radius: 10px 10px 10px 3px;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .time-walk{
+                display: flex;
+                align-items: center;
+                .circule{
+                    width: 15px;
+                    height: 15px;
+                    border: 1px solid #fff;
+                    border-radius: 50%;
+                    margin-right: 5px;
+                }
+    
+                p{
+                    font-size: 0.5rem;
+                }
+            }
+        }
+
+        .message{
+            width: 90%;
+            border-radius: 10px;
+            background-color: #fff;
+            display: flex;
+            justify-content: space-between;
+            margin: 20px auto;
+            padding: 10px;
+
+            p{
+                font-size: 0.8rem;
+                color: rgb(179, 179, 179);
+            }
+        }
+    }
+}
+
+.description{
+    width: 30%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    color:hsl(264, 65%, 25%);
+
+    h1{
+        margin-bottom: 20px;
+        font-weight: 500;
+    }
+
+    p{
+        color: rgb(141, 141, 141);;
+    }
+}
+
+.attribution{
+    width: 95%;
+    position: absolute;
+    text-align: end;
+    bottom: 0px;
+    margin: 20px;
+}
+
+@media screen and(max-width:1080px){
+    
+    .container{
+        height: auto;
+    }
+
+    .card, .description{
+        position: static;
+        transform: translateY(50px);
+        margin: auto;
+    }
+
+    .description{
+        width: 80%;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .attribution{
+        position: static;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+}
+
